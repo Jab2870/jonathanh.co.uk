@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+		<meta name="author" content="Jonathan Hodgson" />
+		$if(date)$
+		<meta name="dcterms.date" content="$date$" />
+		$endif$
+		$if(description)$
+		<meta name="description" content="$description$" />
+		$endif$
+		$if(title)$
+		<title>$title$</title>
+		$else$
+		<title>Jonathan Hodgson's Blog</title>
+		$endif$
+		<link rel="stylesheet" href="/assets/css/main.css" type="text/css" charset="utf-8">
+	</head>
+	<body>
+		<main>
+			<article>
+				<h1>$title$</h1>
+				<div class="article-details">
+					<div class="date">
+						$date$
+					</div>
+				</div>
+				$body$
+			</article>
+		</main>
+		<aside>
+			<span class="blog-name"><a href="/">Jonathan Hodgson</a></span>
+			<nav>
+${ ../generated-template-parts/tagList.html() }
+			</nav>
+		</aside>
+	</body>
+</html>

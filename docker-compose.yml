@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d:ro
+      - ./public_html:/usr/share/nginx/html:ro
+      - ./assets:/usr/share/nginx/assets:ro
